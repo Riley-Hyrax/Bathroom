@@ -17,30 +17,41 @@
 
 </head>
 <body>
-    <nav class="navbar"></nav>
+    <nav class="navbar">
+        <img src="img/logo.png" alt="">
+    </nav>
+    <div id="zipModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="h2-modal">Enter Your Zip Code</h2>
+            <input type="text" id="zipInput" placeholder="Enter zip code">
+            <button class="modalButton" onclick="checkZipCode()" id="button-modal">Submit</button>
+            <div id="result" class="message"></div>
+        </div>
+    </div>
    
         <section class="section-1">
             <div class="s1-c1" data-aos="fade">
                 <h1 class="s1-h1">
-                    NEW VERIFIED SERVICE ENABLES HOMEOWNERS TO REMODEL THEIR BATHROOM THROUGH A RELIEF INITIATIVE
+                    NEW VERIFIED SERVICE ENABLES HOMEOWNERS TO REMODEL THEIR BATHROOM THROUGH THIS RELIEF INITIATIVE
                 </h1>
                 <p class="s1-p1">
                     Deadline At The End Of This Month
                 </p>
-                <button class="s1-b1">Check My Zip Code</button>
+                <button class="s1-b1" onclick="openModal()">Check My Zip Code</button>
                 <p class="s1-p2">
                     Rated 4.9/5 by thousands of happy homeowners.
                 </p>
                 <!--<img src="img/trustpilot.jpg" alt="trustpilot logo" class="s1-img">-->
-                <h1 class="s1-h1-quality">To Qualify You Must Be:</h1>
+                <h1 class="s1-h1-quality">To Qualify Residents Must Be:</h1>
                 <div class="s1-c1-block">
                     <div class="s1-block-item">
                         <img src="img/Homeowner.webp" alt="" class="s1-img">
-                        <p class="block-p1">A Homeowner</p>
+                        <p class="block-p1">Homeowners</p>
                     </div>
                     <div class="s1-block-item">
                         <img src="img/US-Citizen.webp" alt="" class="s1-img">
-                        <p class="block-p1">A U.S Resident</p>
+                        <p class="block-p1">U.S Based</p>
     
                     </div>
                     <div class="s1-block-item">
@@ -51,8 +62,8 @@
                 </div>
     
             </div>
-            <div class="s1-c2" data-aos="fade">
-                <div class="s1-c2-block1"></div>
+            <div class="s1-c2" data-aos="fade" >
+                <div class="s1-c2-block1" style="background-image: url(img/img-top-right.jpg);"></div>
                 <div class="s1-c2-cta">
                     <h1>Apply Now to Qualify for Immediate Bathroom Remodeling Relief – Limited Time Only!</h1>
                 </div>
@@ -60,15 +71,14 @@
         </section>
         
         <section class="section-2">
-            <div class="s2-c1" data-aos="fade"></div>
+            <div class="s2-c1" data-aos="fade" style="background-image: url(img/img-bottom-left.jpg);"></div>
             <div class="s2-c2" data-aos="fade">
                 <h2 class="s2-h2">Why Homeowners Are Choosing This Initiative</h2>
-                <p class="s2-p1">Transform your bathroom with little to no upfront cost thanks to this limited-time government-backed relief program.</p>
                 
                 <ul class="s2-benefits">
                     <li class="s2-benefit-item">
                         <img src="img/Affordable.webp" alt="" class="s1-img">
-                        <p class="s2-benefit-text">High-Quality Remodeling</p>
+                        <p class="s2-benefit-text">Cost-Effective Remodeling</p>
                     </li>
                     <li class="s2-benefit-item">
                         <img src="img/Fast-Approve.webp" alt="" class="s1-img">
@@ -82,7 +92,7 @@
         
                 <div class="s2-cta-container">
                     <p class="s2-cta-text">Spots are filling up fast! Check if you qualify now:</p>
-                    <button class="s2-b1">Check My Eligibility</button>
+                    <button class="s2-b1">Check My Zip Code</button>
                 </div>
             </div>
         </section>
